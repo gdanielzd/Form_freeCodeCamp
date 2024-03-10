@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Formulario de contacto</h1>
+    <p id="description">Utiliza este formulario para poder contactarte conmigo y para poder ver mis redes </p>
+    <form id="survey'form">
+        <fieldset>
+            <label for="name-label">
+                <input type="text" id="name-label"  placeholder="Nombre" required>
+            </label>
+            <label for="email-label">
+                <input type="email-label" id="email" pattern="[a-z0-9_-.] +@[a-z0-9_-]+.[a-z]" placeholder="Email" required>
+            </label>
+            <label for="tel-label">
+                <input type="tel-label" id="tel" pattern="[0-9+]" placeholder="Telefono" required>
+            </label>
+            <label for="number-label">
+                <input type="number" id="number-label" min="18" max="99" placeholder="Edad">
+            </label>
+        </fieldset>
+        <fieldset>
+            <select name="dropdawn" id="dropdawn">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="personal">
+                <input type="radio" id="personal" name="radio" checked>
+            </label>
+            <label for="business">
+                <input type="radio" id="business" name="radio">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for=""></label>
+        </fieldset>
+    </form>
+</body>
+</html>
