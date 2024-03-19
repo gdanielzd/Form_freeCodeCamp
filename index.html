@@ -6,24 +6,33 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- PASO 1 -->
     <h1 id="title">Formulario de contacto</h1>
+    <!-- PASO 2 -->
     <p id="description">Utiliza este formulario para poder contactarte conmigo y para poder ver mis redes </p>
-    <form id="survey'form">
+    <!-- PASO 3 -->
+    <form id="survey-form">
+        
         <fieldset>
+            <!-- PASO 4, 10, 11 -->
             <label for="name-label">
                 <input type="text" id="name-label"  placeholder="Nombre" required>
             </label>
+            <!-- PASO 5, 6, 10, 11 -->
             <label for="email-label">
-                <input type="email-label" id="email" pattern="[a-z0-9_-.] +@[a-z0-9_-]+.[a-z]" placeholder="Email" required>
+                <input type="email" id="email-label" pattern="[a-z0-9_-.] +@[a-z0-9_-]+.[a-z]" placeholder="Email" required>
             </label>
+            <!-- PASO 7, 8, 10, 11 -->
             <label for="tel-label">
-                <input type="tel-label" id="tel" pattern="[0-9+]" placeholder="Telefono" required>
+                <input type="tel" id="tel-label" pattern="[0-9+]" placeholder="Telefono" required>
             </label>
+            <!-- PASO 9, 10, 11 -->
             <label for="number-label">
                 <input type="number" id="number-label" min="18" max="99" placeholder="Edad">
             </label>
         </fieldset>
         <fieldset>
+            <!-- PASO 12 -->
             <select name="dropdawn" id="dropdawn">
                 <option value="0"></option>
                 <option value="1"></option>
@@ -31,6 +40,7 @@
             </select>
         </fieldset>
         <fieldset>
+            <!-- PASO 13 -->
             <label for="personal">
                 <input type="radio" id="personal" name="radio" checked>
             </label>
