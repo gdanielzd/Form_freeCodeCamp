@@ -12,45 +12,64 @@
     <p id="description">Utiliza este formulario para poder contactarte conmigo y para poder ver mis redes </p>
     <!-- PASO 3 -->
     <form id="survey-form">
-        
         <fieldset>
+            <legend>Indica tus datos</legend>
             <!-- PASO 4, 10, 11 -->
-            <label for="name-label">
-                <input type="text" id="name-label"  placeholder="Nombre" required>
+            <label for="name-label" id="name-label">
+                <input type="text" id="name"  placeholder="Nombre" required>
             </label>
             <!-- PASO 5, 6, 10, 11 -->
-            <label for="email-label">
-                <input type="email" id="email-label" pattern="[a-z0-9_-.] +@[a-z0-9_-]+.[a-z]" placeholder="Email" required>
+            <label for="email-label" id="email-label">
+                <input type="email" id="email" pattern="[a-z0-9_-.] +@[a-z0-9_-]+.[a-z]" placeholder="Email" required>
             </label>
             <!-- PASO 7, 8, 10, 11 -->
-            <label for="tel-label">
-                <input type="tel" id="tel-label" pattern="[0-9+]" placeholder="Telefono" required>
+            <label for="tel-label" id="tel-label">
+                <input type="tel" id="tel" pattern="[0-9+]" placeholder="Telefono" required>
             </label>
             <!-- PASO 9, 10, 11 -->
-            <label for="number-label">
-                <input type="number" id="number-label" min="18" max="99" placeholder="Edad">
-            </label>
+            <label for="number-label" id="number-label">
+                <input type="number" id="number" min="18" max="99" placeholder="Edad">
+            </label>Menores de 18 no aplicar
         </fieldset>
         <fieldset>
+            <legend>Donde estas ubicado?</legend>
             <!-- PASO 12 -->
-            <select name="dropdawn" id="dropdawn">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
+            <select name="dropdown" id="dropdown">
+                <option value="0">Seleccione una opcion</option>
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
             </select>
         </fieldset>
         <fieldset>
+            <legend id="tipo-de-cliente">Que tipo de cliente eres?</legend>
             <!-- PASO 13 -->
             <label for="personal">
-                <input type="radio" id="personal" name="radio" checked>
-            </label>
+                <input type="radio" id="personal" name="radio" value="personal">
+            </label>Personal
             <label for="business">
-                <input type="radio" id="business" name="radio">
-            </label>
+                <input type="radio" id="business" name="radio" value="business">
+            </label>Empresa
         </fieldset>
         <fieldset>
-            <label for=""></label>
+            <legend>Que servicios requieres?</legend>
+            <!-- PASO 14 -->
+            <label for="check-1">
+                <input type="checkbox" name="check" id="check-1" value="check-1" >
+            </label>Servicio 1
+            <label for="check-2">
+                <input type="checkbox" name="check" id="check-2" value="check-2">
+            </label>Servicio 2
+            <label for="check-3">
+                <input type="checkbox" name="check" id="check-3" value="check-3">
+            </label>Servicio 3
         </fieldset>
+        <fieldset>
+            <legend>Dejanos tus comentarios</legend>
+            <textarea name="textarea" id="textarea" cols="60" rows="10"></textarea>
+        </fieldset>
+        <button id="submit">Enviar
+        </button>
     </form>
 </body>
 </html>
